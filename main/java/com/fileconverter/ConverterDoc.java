@@ -52,6 +52,11 @@ public class ConverterDoc extends JFrame {
 	 * Create the frame.
 	 */
 	public ConverterDoc() {
+		inicialize();
+		
+	}
+
+	public void inicialize() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 377, 275);
 
@@ -115,5 +120,6 @@ public class ConverterDoc extends JFrame {
 						.addComponent(bt_converter, GroupLayout.PREFERRED_SIZE, 33, GroupLayout.PREFERRED_SIZE)
 						.addContainerGap(50, Short.MAX_VALUE)));
 		contentPane.setLayout(gl_contentPane);
+
 	}
 }
