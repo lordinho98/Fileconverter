@@ -71,7 +71,14 @@ public class MainView extends JFrame {
 		JMenuItem bt_converterDoc = new JMenuItem("Converter DOC para PDF");
 		bt_converterDoc.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
+                                 try {
+					ConverterDoc doc = new ConverterDoc();
+					doc.inicialize();
+					doc.setVisible(true);
+					
+				} catch (Exception x) {
+					JOptionPane.showInputDialog("Falha ao acessar",e);
+				}
 			}
 		});
 		bt_converterDoc.setFont(new Font("Arial", Font.PLAIN, 12));
